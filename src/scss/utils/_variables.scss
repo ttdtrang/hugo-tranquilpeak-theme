@@ -6,19 +6,22 @@ $open-sans:            'Open Sans';
 $open-sans-sans-serif: 'Open Sans', sans-serif;
 $merriweather-serif:   'Merriweather', serif;
 $menlo:                 Menlo, Consolas, monospace;
+$tenor-sans:           'Tenor Sans', sans-serif;
+$pontano-sans:         'Pontano Sans', sans-serif;
+$bad-script:           'Bad Script', cursive;
 
 $font-family-base: $open-sans-sans-serif;
 
 $font-families: (
    // base
-   'headings':          $open-sans-sans-serif,
+   'headings':          $tenor-sans,
    // components
    'code':              $menlo,
-   'caption':           $merriweather-serif,
+   'caption':           $open-sans,
    'image-gallery':     $open-sans,
-   'post-header-cover': $merriweather-serif,
+   'post-header-cover': $tenor-sans,
    'post-meta':         $open-sans-sans-serif,
-   'post-content':      $merriweather-serif,
+   'post-content':      $open-sans,
    'post-excerpt-link': $open-sans-sans-serif,
    'highlight':         $menlo,
    // layout
