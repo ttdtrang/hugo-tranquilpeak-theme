@@ -15,8 +15,15 @@
           {{ if or (not .Params.coverimage) (eq .Params.covermeta "out") }}
             {{ partial "post/header.html" . }}
           {{ end }}
+          <div class="post-side-toc" id="toc">
+            {{ (i18n "post.toc") .TableOfContents }}
+            <!-- {{ .Scratch.Set "TOC" (findRE "id=\"TOC\".*>.*<" .Content ) }} -->
+            <!-- {{ .Scratch.Get "TOC" }} -->
+            <!-- {{ findRE "<h2.*?>(.|\n)*?</h2>" .Content }} -->
+            {{ printf "%s" (index (findRE "<div.*?id=\"TOC\".*?>(.|\n)*?</div>" .Content 1) 0) | safeHTML}}
+          </div>
           <div class="post-content markdown" itemprop="articleBody">
-            <div class="main-content-wrap">
+                        <div class="main-content-wrap">
               {{ (replaceRE "<!--\\s*[t|T][o|O][c|C]\\s*-->" (printf "<h1 id=\"table-of-contents\">%s</h1>%s" (i18n "post.toc") .TableOfContents) .Content) | safeHTML }}
               {{ partial "post/gallery.html" . }}
             </div>
