@@ -16,4 +16,26 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,700,700i&subset=cyrillic,cyrillic-ext,latin-ext');
 */ 
 
-@import url('https://fonts.googleapis.com/css?family=Roboto|Tenor+Sans');
+@font-face {
+    font-family: 'Computer Modern Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/cmunss.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Computer Modern Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: url('/fonts/cmunsi.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Computer Modern Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/cmunsx.woff') format('woff');
+}
+
+// @import url('https://fonts.googleapis.com/css?family=Roboto|Tenor+Sans');
+

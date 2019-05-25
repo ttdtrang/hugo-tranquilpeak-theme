@@ -10,23 +10,24 @@ $tenor-sans:           'Tenor Sans', sans-serif;
 $pontano-sans:         'Pontano Sans', sans-serif;
 $bad-script:           'Bad Script', cursive;
 $roboto:               'Roboto', sans-serif;
+$computer:             'Computer Modern Sans', sans-serif;
 
-$font-family-base: $open-sans-sans-serif;
+$font-family-base: $computer;
 
 $font-families: (
    // base
-   'headings':          $tenor-sans,
+   'headings':          $computer,
    // components
    'code':              $menlo,
-   'caption':           $roboto,
-   'image-gallery':     $roboto,
+   'caption':           $computer,
+   'image-gallery':     $computer,
    'post-header-cover': $tenor-sans,
-   'post-meta':         $roboto,
-   'post-content':      $roboto,
-   'post-excerpt-link': $open-sans-sans-serif,
+   'post-meta':         $computer,
+   'post-content':      $computer,
+   'post-excerpt-link': $computer,
    'highlight':         $menlo,
    // layout
-   'sidebar':           $roboto
+   'sidebar':           $computer
 );
 
 // equal to 15px
